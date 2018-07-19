@@ -18,12 +18,14 @@ class Item {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   //title = 'app';
 
   public tasks: Observable<any[]>;
+
+  public bShowNav: boolean = false;
 
   myTask: string;
   editMode: boolean = false;
@@ -47,6 +49,10 @@ export class AppComponent {
           return { id, ...data };
         });
       }));
+  }
+
+  public toggleMenu() {
+    this.bShowNav = !this.bShowNav;
   }
 
   public edit(task) {
