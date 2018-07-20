@@ -2,6 +2,19 @@
   players works!
 </p>
 
-<div *ngFor="let player of players">
-  <div>{{player.firstName}}</div>
+
+
+<div *ngIf="bInEditMode">
+  <div *ngFor="let player of players">
+    <input type="text" [(ngModel)]="player.firstName">
+  </div>
+  <div>
+
+  </div>
+</div>
+<div *ngIf="!bInEditMode">
+  <div *ngFor="let player of players">
+    <div>{{player.firstName}}</div>
+  
+  </div>
 </div>

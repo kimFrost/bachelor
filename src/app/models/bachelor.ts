@@ -21,10 +21,12 @@ export class Player {
     firstName: string;
     lastName: string;
     nickName: string;
-    constructor(id: number, firstName: string, lastName: string, nickName: string) {
+    points: number;
+    constructor(id: number, firstName: string, lastName: string, nickName: string, points: number) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.nickName = nickName;
+        this.points = points;
     }
 }
 

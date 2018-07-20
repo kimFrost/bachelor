@@ -12,6 +12,7 @@ import { Player } from "../models/bachelor";
 export class PlayersComponent implements OnInit {
 
   public players: Player[] = [];
+  public bInEditMode: boolean = true;
 
   constructor(
     public dataService: DataService
@@ -25,6 +26,10 @@ export class PlayersComponent implements OnInit {
         this.players = players;
       }
     );
+  }
+
+  public createPlayer() {
+
   }
 
 }
