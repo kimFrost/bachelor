@@ -10,10 +10,19 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
+import { PlayersComponent } from './players/players.component';
+import { ChallengesComponent } from './challenges/challenges.component';
+import { BattleComponent } from './battle/battle.component';
+import { BattleHistoryComponent } from './battle-history/battle-history.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlayersComponent,
+    ChallengesComponent,
+    BattleComponent,
+    BattleHistoryComponent
   ],
   imports: [
     BrowserModule,

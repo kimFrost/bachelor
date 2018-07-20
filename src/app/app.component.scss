@@ -31,14 +31,25 @@ $site_header-height: 60px;
 
 .site__nav {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
     width: 300px;
-    background: black;
+    background: lightgrey;
     color: white;
     transform: translate(-100%, 0);
+    & > * {
+        //flex: 1 1 100%;
+        display: block;
+        padding: 20px;
+        border-bottom: 1px solid grey;
+    }
+    a {
+        color: black;
+    }
 }
 
 .site_show-nav {

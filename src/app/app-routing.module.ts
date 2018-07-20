@@ -1,17 +1,33 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { PlayersComponent } from './players/players.component';
+import { ChallengesComponent } from './challenges/challenges.component';
+import { BattleComponent } from './battle/battle.component';
+import { BattleHistoryComponent } from './battle-history/battle-history.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'todos',
+    redirectTo: 'players',
     pathMatch: 'full'
   },
   {
-    path: 'todos',
-    component: AppComponent
+    path: 'players',
+    component: PlayersComponent
+  },
+  {
+    path: 'challenges',
+    component: ChallengesComponent
+  },
+  {
+    path: 'battle',
+    component: BattleComponent
+  },
+  {
+    path: 'history',
+    component: BattleHistoryComponent
   }
 ];
 

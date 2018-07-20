@@ -14,7 +14,7 @@ import {
 })
 export class TaskService {
 
-  tasks: AngularFirestoreCollection<Task>;
+  public tasks: AngularFirestoreCollection<Task>;
   private taskDoc: AngularFirestoreDocument<Task>;
 
   constructor(private db: AngularFirestore) {
