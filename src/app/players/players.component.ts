@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SimpleChanges, SimpleChange } from '@angular/core';
 
 import { DataService } from '../data.service';
 
@@ -28,12 +28,18 @@ export class PlayersComponent implements OnInit {
     );
   }
 
+  ngOnChanges(changes: SimpleChanges) {
+    const name: SimpleChange = changes.name;
+    console.log('prev value: ', name.previousValue);
+    console.log('got name: ', name.currentValue);
+  }
+
   public createPlayer() {
 
   }
 
   public updatePlayer(player: Player) {
-
+    console.log('player update', player);
   }
 
 }

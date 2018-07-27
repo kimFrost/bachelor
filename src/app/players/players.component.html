@@ -7,6 +7,7 @@
 <div *ngIf="bInEditMode">
   <div *ngFor="let player of players">
     <input type="text" [(ngModel)]="player.firstName">
+    <button (click)="updatePlayer(player)">Save</button>
   </div>
   <div>
 
