@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators/map';
 import {
   AngularFirestoreDocument,
   AngularFirestore,
-  AngularFirestoreCollection
+  AngularFirestoreCollection,
 } from "angularfire2/firestore";
 
 

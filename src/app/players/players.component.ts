@@ -32,6 +32,10 @@ export class PlayersComponent implements OnInit {
 
   }
 
+  public updatePlayer(player: Player) {
+
+  }
+
 }
 
 
